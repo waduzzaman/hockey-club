@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Hockey Club</title>
 
         <!-- tailwind and daisy ui cdn -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
@@ -16,21 +16,22 @@
                 theme: {
                     extend: {
                         colors: {
-                            'blue': '#4C8DF1',
-                            'red': '#FF4240',
-                            'purple': '#7e5bef',
-                            'pink': '#ff49db',
-                            'orange': '#FFB546',
+                            'blue': '#4C8DF1',                            
+                            'purple': '#7e5bef',                                                    
                             'golden': '#FFB546',
-                            'green': '#49D293',
-                            'yellow': '#ffc82c',
+                            'green': '#49D293',                           
                             'gray-dark': '#273444',
                             'gray': '#8492a6',
                             'gray-light': '#d3dce6',
                             'text-custom-gray': '#131318',
                             'button-color': '#FF4240',
                             'para-text-color': '#0D0D1299',
-                            'footer-color':'#131318;'
+                            'footer-color': '#131318',
+                            'question-color1': '#BCED6D19',
+                            'question-color2': '#FDDD5F19',
+                            'question-color3': '#3E9CF319',
+
+
                         },
 
                         borderRadius: {
@@ -79,21 +80,22 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0"
+                        <ul tabindex="0 font-normal"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a class="text-red-600">Home</a></li>
+                            <li><a class="text-red ">Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Page</a></li>
                             <li><a>Blog</a></li>
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <h2 class="btn btn-ghost text-3xl text-slate-950 ">Hockey<span class="text-red-500">'</span>s</h2>
+                    <h2 class="text-4xl text-800 font-bold text-slate-950 ">Hockey<span class="text-red-500">'</span>s
+                    </h2>
 
                 </div>
                 <div class="navbar-center hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="text-red-600">Home</a></li>
+                    <ul class="menu menu-horizontal px-1 font-normal">
+                        <li><a class="text-red ">Home </a></li>
                         <li><a>About</a></li>
                         <li><a>Page</a></li>
                         <li><a>Blog</a></li>
@@ -101,9 +103,9 @@
                     </ul>
                 </div>
                 <div></div>
-                <div class="navbar-end">
+                <div class="navbar-end ">
                     <i class="fa-solid fa-magnifying-glass px-3"></i>
-                    <a class="btn bg-red-600 text-white border-white">Get Ticket</a>
+                    <a class="btn bg-red text-white border-white">Get Ticket</a>
                 </div>
             </div>
 
@@ -147,7 +149,8 @@
                 <div class="relative">
                     <div class=" absolute bottom-12 right-0 bg-black mr-10 px-16 py-5 rounded-md">
                         <h2 class="text-2xl font-bold text-white pb-4 w-96 ">Meet all the heroes from the field</h2>
-                        <p class="text-white w-96">Explore our hockey team's website celebrating our cup win. Dive into
+                        <p class="text-base text-gray-500 font-16 w-96">Explore our hockey team's website celebrating
+                            our cup win. Dive into
                             the victories and stories of our heroic players. </p>
                     </div>
                 </div>
@@ -163,54 +166,57 @@
                 <!-- Section Header -->
                 <section>
                     <div class="">
-                        <h2 class="text-4xl font-bold text-custom-gray mx-auto my-2">Professional Hockeys Club</h2>
-                        <p class="text-black">Premier hockey excellence embodied in the Professional Hockey Club,
+                        <h2 class="text-4xl font-bold mx-auto my-2 text-black ">Professional Hockeys Club</h2>
+                        <p class="text-gray">Premier hockey excellence embodied in the Professional Hockey Club,
                             defining skill, teamwork, and triumph on the icy stage.</p>
                     </div>
                 </section>
 
                 <!-- Statistics with Radial Progress Bar -->
 
-                <section class="container mb-10 mx-auto mt-5 border-spacing-x-7 ">
+                <section class="container mb-12 mx-auto mt-5 border-spacing-x-7 ">
                     <div class="flex ">
                         <div class="">
                             <div class="radial-progress text-red" style="--value:87; transform: rotate(180deg);"
-                                role="progressbar"><span class="rotate-180">87%</span></div>
+                                role="progressbar"><span class="rotate-180 text-black text-2xl font-bold">87%</span>
+                            </div>
 
-                            <h3 class="text-3xl text-custom-gray font-extrabold">Prayer Facility</h3>
-                            <p>Top-notch player facilities, fostering excellence and optimal performance</p>
+                            <h3 class="text-xl font-semibold text-black">Prayer Facility</h3>
+                            <p class="text-base font-normal">Top-notch player facilities, fostering excellence and
+                                optimal performance</p>
                         </div>
                         <div>
                             <div class="radial-progress text-green" style="--value:95; transform: rotate(180deg);"
-                                role="progressbar"><span class="rotate-180">95%</span></div>
+                                role="progressbar"><span class="rotate-180 text-black text-2xl font-bold">95%</span>
+                            </div>
 
-                            <h3 class="text-2xl text-gray-950">Experienced Coach</h3>
+                            <h3 class="text-xl font-semibold text-black">Experienced Coach</h3>
                             <p>Expert coach, guiding athletes with seasoned wisdom, honing skills proficiently.</p>
                         </div>
                         <div>
 
 
                             <div class="radial-progress text-golden " style="--value:90; transform: rotate(180deg);"
-                                role="progressbar"><span class="rotate-180">90%</span>
+                                role="progressbar"><span class="rotate-180 text-black text-2xl font-bold">90%</span>
                             </div>
-                            <h3 class="text-2xl text-gray-950">Senior Player</h3>
+                            <h3 class="text-xl font-semibold text-black">Senior Player</h3>
                             <p>Veteran athlete, showcasing seasoned prowess and leadership on the field.</p>
                         </div>
                         <div>
 
                             <div class="radial-progress text-blue" style="--value:80; transform: rotate(180deg);"
-                                role="progressbar"><span class="rotate-180">80%</span>
+                                role="progressbar"><span class="rotate-180 text-black text-2xl font-bold">80%</span>
                             </div>
 
 
-                            <h3 class="text-2xl text-custom-gray">Training Ground</h3>
+                            <h3 class="text-xl font-semibold text-black">Training Ground</h3>
                             <p>Field of growth, honing skills, and fostering athletic excellence.e</p>
                         </div>
 
                     </div>
 
 
-                    <hr class="border-t border-dashed border-gray-500 my-4 mb-3">
+                    <hr class="border-t border-dashed border-gray-500 my-4 mb-5">
                 </section>
 
             </div>
@@ -218,17 +224,20 @@
             <!-- Program of the Club with grid and text overflow -->
 
             <div class="container my-10">
-                <h2 class="text-center text-2xl text-custom-gray my-2">Program Section</h2>
-                <p class="text-center mx-auto">Join our hockey club, a thriving community fostering excellence,
+                <h2 class="text-center text-4xl text-black font-bold my-2">Program Section</h2>
+                <p class="text-center mx-auto">Join our hockey club, a thriving community fostering excellence, <br>
                     teamwork, and passion for the game.</p>
+
+                <hr class="border-t border-dashed border-gray-500 my-5">
 
                 <div class="grid grid-cols-2 gap-2 my-5">
                     <div>
                         <div class="col-span-2 relative w-full h-64 overflow-hidden rounded-lg">
-                            <img src="./Images/2.png" alt="Your Image" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex items-center justify-start text-white">
+                            <img src="./Images/2.png" alt="Your Image" class="w-full h-full object-cover opacity-80">
+
+                            <div class="absolute inset-0 flex pl-5 items-center justify-start text-white">
                                 <div class="px-3">
-                                    <p class="text-lg font-bold leading-tight">Junior Program</p>
+                                    <p class="text-3xl font-bold leading-tight">Junior Program</p>
                                     <p class="text-sm leading-tight">
                                         Enriching junior program at our hockey club, nurturing young talents with expert
                                         coaching, fostering skills, and camaraderie.</p>
@@ -243,10 +252,11 @@
                         </div>
                     </div>
                     <div class="relative w-full h-64 overflow-hidden rounded-lg">
-                        <img src="./Images/3.png" alt="Your Image" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center text-white">
+                        <img src="./Images/3.png" alt="Your Image" class="w-full h-full object-cover opacity-80">
+
+                        <div class="absolute inset-0 pl-5 flex items-center justify-center text-white">
                             <div class="px-3">
-                                <p class="text-lg font-bold leading-tight">Teenager Program</p>
+                                <p class="text-3xl font-bold leading-tight">Teenager Program</p>
                                 <p class="text-sm leading-tight">
 
                                     Empowering teenagers through our specialized program, blending skill development,
@@ -257,12 +267,14 @@
                         </div>
                     </div>
                     <div class="col-span-2 relative w-full h-64 overflow-hidden rounded-lg">
-                        <img src="./Images/4.png" alt="Your Image" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center text-white">
+                        <img src="./Images/4.png" alt="Your Image" class="w-full h-full object-cover opacity-80">
+
+                        <div class="absolute inset-0 flex items-center justify-start text-white pl-5">
                             <div class="px-3">
-                                <p class="text-lg font-bold leading-tight">Professional Program</p>
+                                <p class="text-3xl font-bold ">Professional Program</p>
                                 <p class="text-sm leading-tight">
-                                    Elevate your game in our professional program, honing expertise, strategic prowess,
+                                    Elevate your game in our professional program, honing expertise, <br> strategic
+                                    prowess,
                                     and fostering a winning mindset.</p>
                                 <button class="btn bg-button-color border-none text-white mt-3">Register Now</button>
 
@@ -271,6 +283,11 @@
                     </div>
 
                 </div>
+
+                <hr class="border-t border-dashed border-gray-500 my-4">
+
+
+
             </div>
 
             <!-- Program Section done -->
@@ -279,9 +296,9 @@
 
             <div class="container">
                 <div class="text-center">
-                    <h2 class="text-3xl text-custom-gray font-extrabold">Our New Products</h2>
+                    <h2 class="text-4xl font-bold mx-auto my-2 text-black ">Our New Products</h2>
                     <p>
-                        Enriching junior program at our hockey club, nurturing young talents with expert coaching,
+                        Enriching junior program at our hockey club, nurturing young talents with expert coaching, <br>
                         fostering skills, and camaraderie.</p>
                 </div>
 
@@ -292,7 +309,7 @@
                 <div class="product-card grid grid-cols-2 gap-5 my-5">
                     <!-- card 1 -->
                     <div class="card-1">
-                        <div class="card card-side bg-white shadow-2xl border-2">
+                        <div class="card card-side bg-white px-1 shadow-xl border-2">
                             <figure><img class="mx-2 my-2" src="./Images/5.png" alt="shirt" /></figure>
                             <div class="card-body">
                                 <div class="flex gap-3 justify-center items-center">
@@ -340,11 +357,11 @@
 
                                 </div>
 
-                                <h2 class="card-title">World Cup Jersey</h2>
+                                <h2 class="card-title text-xl text-black">World Cup Jersey</h2>
                                 <p>Celebrate global spirit with iconic World Cup-inspired football Jersey</p>
                                 <div class="flex justify-start gap-10">
                                     <div class="price">
-                                        <p class="text-red text-lg font-extrabold">Price - $22.00</p>
+                                        <p class="text-red text-normal font-extrabold">Price - $22.00</p>
                                     </div>
                                     <div class="flex gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -429,11 +446,11 @@
 
                                 </div>
 
-                                <h2 class="card-title">World Cup Jersey</h2>
+                                <h2 class="card-title  text-xl text-black">World Cup Football</h2>
                                 <p>Celebrate global spirit with iconic World Cup-inspired football Jersey</p>
                                 <div class="flex justify-start gap-10">
                                     <div class="price">
-                                        <p class="text-red text-lg font-extrabold">Price - $22.00</p>
+                                        <p class="text-red text-normal font-extrabold">Price - $22.00</p>
                                     </div>
                                     <div class="flex gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -519,11 +536,11 @@
 
                                 </div>
 
-                                <h2 class="card-title">World Cup Jersey</h2>
+                                <h2 class="card-title  text-xl text-black">World Cup Cap</h2>
                                 <p>Celebrate global spirit with iconic World Cup-inspired football Jersey</p>
                                 <div class="flex justify-start gap-10">
                                     <div class="price">
-                                        <p class="text-red text-lg font-extrabold">Price - $22.00</p>
+                                        <p class="text-red text-normal font-extrabold">Price - $22.00</p>
                                     </div>
                                     <div class="flex gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -609,7 +626,7 @@
 
                                 </div>
 
-                                <h2 class="card-title">World Cup Jersey</h2>
+                                <h2 class="card-title  text-xl text-black">World Cup T-shirt</h2>
                                 <p>Celebrate global spirit with iconic World Cup-inspired football Jersey</p>
                                 <div class="flex justify-start gap-10">
                                     <div class="price">
@@ -650,8 +667,8 @@
                     </div>
 
                     <!-- card 5 -->
-                    <div class="card-1">
-                        <div class="card card-side bg-white shadow-2xl border-2">
+                    <div class="card-1 pl-2">
+                        <div class="card px-1 card-side bg-white shadow-2xl border-2">
                             <figure><img class="mx-2 my-2" src="./Images/9.png" alt="shirt" /></figure>
                             <div class="card-body">
                                 <div class="flex gap-3 justify-center items-center">
@@ -699,11 +716,11 @@
 
                                 </div>
 
-                                <h2 class="card-title">World Cup Jersey</h2>
+                                <h2 class="card-title  text-xl text-black">World Cup Hat</h2>
                                 <p>Celebrate global spirit with iconic World Cup-inspired football Jersey</p>
                                 <div class="flex justify-start gap-10">
                                     <div class="price">
-                                        <p class="text-red text-lg font-extrabold">Price - $22.00</p>
+                                        <p class="text-red text-normal font-extrabold">Price - $22.00</p>
                                     </div>
                                     <div class="flex gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -789,11 +806,11 @@
 
                                 </div>
 
-                                <h2 class="card-title">World Cup Jersey</h2>
+                                <h2 class="card-title  text-xl text-black">World Cup Soccer Ball</h2>
                                 <p>Celebrate global spirit with iconic World Cup-inspired football Jersey</p>
                                 <div class="flex justify-start gap-10">
                                     <div class="price">
-                                        <p class="text-red text-lg font-extrabold">Price - $22.00</p>
+                                        <p class="text-red text-normal font-extrabold">Price - $22.00</p>
                                     </div>
                                     <div class="flex gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -845,66 +862,90 @@
             <!-- Clients Question Section Start -->
 
             <div class="container">
-                <div class="text-center">
-                    <h2 class="text-3xl text-custom-gray font-extrabold">Clients Question</h2>
+
+
+
+                <div class="text-center my-10">
+                    <h2 class="text-4xl font-bold mx-auto my-2 text-black">Clients Question</h2>
                     <p>
-                        Explore client insights and queries in our dynamic "Clients Question" section, fostering
+                        Explore client insights and queries in our dynamic "Clients Question" section, <br> fostering
                         transparency, trust, and engagement.</p>
                 </div>
 
-                <div class=" flex  gap-2 shadow-lg p-4 bg-white">
+                <hr class="border-t border-dashed border-gray-500 my-4">
+
+
+
+                <div class=" flex  gap-2 shadow-lg p-4 bg-white rounded-xl">
                     <img src="./Images/11.png" alt="">
                     <div class="bg-white">
                         <div class="collapse collapse-plus ">
                             <input type="radio" name="my-accordion-3" checked="checked" />
-                            <div class="collapse-title text-xl font-medium">
-                                Click to open this one and close others
+                            <div class="collapse-title text-xl font-bold text-black">
+                                Our Equipment
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Explore top-tier gear enhancing performance, from cutting-edge sticks to
+                                    state-of-the-art protective equipment for players</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
-                                Click to open this one and close others
+                            <div class="collapse-title text-xl font-bold text-black">
+                                Hockey Training
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Empower your skills with specialized drills, expert coaching, and cutting-edge
+                                    training programs, elevating your hockey prowess</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
-                                Click to open this one and close others
+                            <div class="collapse-title text-xl font-bold text-black">
+                                Private Lesson
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
-                            </div>
-                        </div>
-
-                        <div class="collapse collapse-plus">
-                            <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
-                                Click to open this one and close others
-                            </div>
-                            <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Elevate your game with personalized guidance. Private lessons tailored to your
+                                    skills, accelerating progress and mastery.</p>
                             </div>
                         </div>
 
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">
-                                Click to open this one and close others
+                            <div class="collapse-title text-xl font-bold text-black">
+                                Ski Touring
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Embark on thrilling ski touring adventures. Conquer snowy landscapes with guided
+                                    tours, exploring nature's beauty and challenges</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse collapse-plus">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-bold text-black">
+                                Booking
+                            </div>
+                            <div class="collapse-content">
+                                <p>Secure your spot with easy booking. Seamless reservations ensure hassle-free access
+                                    to unforgettable experiences.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl text-black font-bold">
+                                Pricing
+                            </div>
+                            <div class="collapse-content">
+                                <p>Discover transparent pricing tailored to your needs. Find the perfect plan to elevate
+                                    your experience..</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
+
+
 
             </div>
 
@@ -912,59 +953,83 @@
 
             <!-- Get in Touch Start -->
 
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="text-3xl text-custom-gray font-extrabold">Clients Question</h2>
+            <div class="container mt-10">
+                <hr class="border-t border-dashed border-gray-500 my-10">
+
+                <div class="text-center mb-5">
+                    <h2 class="text-4xl font-bold mx-auto my-2 text-black">Get In Touch</h2>
                     <p>
-                        Explore client insights and queries in our dynamic "Clients Question" section, fostering
-                        transparency, trust, and engagement.</p>
+                        "Connect with us through our 'Get In Touch' section. Reach out for inquiries, support, or <br>
+                        collaborations. Your connection matters to us.</p>
                 </div>
 
-                <div class="grid grid-cols-2">
-                    <div class="flex flex-col">
+                <div class="grid grid-cols-3">
+                    <div class="flex flex-col rounded-md shadow">
 
-                        <div> <img src="./Images/phone.png" alt=""></div>
-                        <div> <img src="./Images/email.png" alt=""></div>
-                        <div><img src="./Images/map.png" alt=""></div>
+                    
+
+                        <div class="rounded-md shadow bg-yellow-50 my-3 p-5 py-2"
+                            style="box-shadow: 0px 0px 10px 2px  bg-question-color1">
+                            <img src="./Images/phone.png" alt="">
+                            <p>Phone Number:</p>
+                            <p class="text-black">(+62) 123-321-543</p>
+                        </div>
+
+                        <div class="rounded-md shadow bg-amber-100 my-3 p-5 py-2"
+                            style="box-shadow: 0px 0px 10px 2px bg-question-color2; ">
+                            <img src="./Images/email.png" alt="">
+                            <p>Email:</p>
+                            <p class="text-black">hockeys@support.com</p>
+                        </div>
+
+                        <div class="rounded-md shadow bg-sky-100 my-3 p-5 py-2"
+                            style="box-shadow: 0px 0px 10px 2px bg-question-color3;">
+                            <img src="./Images/map.png" alt="">
+                            <p>Location</p>
+                            <p class="text-black">152/1 Mohakhali Wireless Gate</p>
+                        </div>
+
 
                     </div>
 
-                    <div class="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
-                        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+                    <div class="max-w-md mx-auto p-6 bg-white rounded-md shadow-md col-span-2 ">                     
 
-                        <form>
+                        <form class="grid  grid-cols-2 gap-2 ">
                             <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-semibold">Your Name:</label>
+                                <label for="name" class="block  font-semibold text-black">Your Name:</label>
                                 <input type="text" id="name" name="name" placeholder="Enter your full name"
-                                    class="w-full px-4 py-2 border rounded-md">
+                                    class="w-full px-4 py-2 border rounded-md bg-white">
                             </div>
 
                             <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-semibold">Your Email:</label>
+                                <label for="email" class="block  font-semibold text-black">Your Email:</label>
                                 <input type="email" id="email" name="email" placeholder="Enter your email"
-                                    class="w-full px-4 py-2 border rounded-md">
+                                    class="w-full px-4 py-2 border rounded-md bg-white">
                             </div>
 
                             <div class="mb-4">
-                                <label for="subject" class="block text-gray-700 font-semibold">Subject:</label>
+                                <label for="subject" class="block  font-semibold text-black">Subject:</label>
                                 <input type="text" id="subject" name="subject" placeholder="Enter the subject"
-                                    class="w-full px-4 py-2 border rounded-md">
+                                    class="w-full px-4 py-2 border rounded-md bg-white">
                             </div>
 
                             <div class="mb-4">
-                                <label for="phone" class="block text-gray-700 font-semibold">Phone Number:</label>
+                                <label for="phone" class="block  font-semibold text-black">Phone Number:</label>
                                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
-                                    class="w-full px-4 py-2 border rounded-md">
+                                    class="w-full bg-white px-4 py-2 border rounded-md">
                             </div>
 
-                            <div class="mb-4">
-                                <label for="message" class="block text-gray-700 font-semibold">Message:</label>
+                            <div class="mb-4 col-span-2">
+                                <label for="message" class="block font-semibold text-black">Message:</label>
                                 <textarea id="message" name="message" rows="4" placeholder="Type your message here"
-                                    class="w-full px-4 py-2 border rounded-md"></textarea>
+                                    class="w-full px-4 py-2 border rounded-md bg-white"></textarea>
                             </div>
 
-                            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+                            <button type="submit" class="bg-red-500 col-span-2 text-white px-4 py-2 rounded-md">Submit</button>
+
+                            
                         </form>
+                      
                     </div>
 
                 </div>
@@ -1025,18 +1090,22 @@
 
                     <div class="flex gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                          <p>hockeys@support.com</p>
+                            <path
+                                d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75"
+                                stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>hockeys@support.com</p>
 
                     </div>
                     <div class="flex gap-2">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z"
+                                stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-                      <p>(+62) 123-321-543</p>
-                    </div>               
+                        <p>(+62) 123-321-543</p>
+                    </div>
 
                     <div>
 
